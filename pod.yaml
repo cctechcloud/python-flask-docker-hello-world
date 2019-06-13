@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: dockerflask
+spec:
+  containers:
+    - image: ramagurijala/dockerflask:latest
+      name: dockerflask-cntr
+  imagePullSecrets:
+    - name: regcred
